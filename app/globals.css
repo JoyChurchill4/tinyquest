@@ -1,0 +1,439 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: #141711;
+  color: #fff7dc;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+button,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.shell {
+  min-height: 100svh;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  background:
+    radial-gradient(circle at 20% 10%, rgba(245, 187, 82, 0.22), transparent 28rem),
+    linear-gradient(140deg, #141711 0%, #283121 48%, #113b42 100%);
+}
+
+.hero {
+  min-height: 58svh;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.heroImage {
+  object-fit: cover;
+  object-position: center;
+  z-index: -2;
+}
+
+.heroShade {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(9, 11, 8, 0.78), rgba(9, 11, 8, 0.08) 45%, #141711 100%),
+    radial-gradient(circle at 50% 52%, transparent 0 12rem, rgba(7, 9, 6, 0.54) 30rem);
+}
+
+.topBar {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+  padding: calc(env(safe-area-inset-top) + 16px) 18px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand,
+.walletButton,
+.iconButton {
+  border: 1px solid rgba(255, 247, 220, 0.24);
+  background: rgba(20, 23, 17, 0.62);
+  color: #fff7dc;
+  backdrop-filter: blur(14px);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 11px;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+.brandMark {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #f2b34f;
+  color: #172013;
+}
+
+.walletButton,
+.iconButton {
+  min-height: 44px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.walletButton {
+  padding: 0 14px;
+  font-weight: 800;
+}
+
+.iconButton {
+  width: 44px;
+}
+
+.heroContent {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+  padding: 15svh 18px 56px;
+}
+
+.eyebrow,
+.label,
+.hint {
+  color: #f3cc76;
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+h1 {
+  max-width: 720px;
+  margin: 8px 0 10px;
+  font-size: clamp(3.4rem, 14vw, 8.5rem);
+  line-height: 0.86;
+  letter-spacing: 0;
+  text-shadow: 0 8px 28px rgba(0, 0, 0, 0.46);
+}
+
+.intro {
+  max-width: 520px;
+  margin: 0;
+  color: #f6ead0;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.questPanel {
+  width: min(calc(100% - 28px), 680px);
+  margin: -54px auto 28px;
+  padding: 14px;
+  border: 1px solid rgba(255, 247, 220, 0.18);
+  border-radius: 8px;
+  background: rgba(21, 25, 17, 0.88);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.38);
+  backdrop-filter: blur(18px);
+}
+
+.rewardStrip,
+.statsGrid,
+.storyCard {
+  border: 1px solid rgba(255, 247, 220, 0.15);
+  border-radius: 8px;
+  background: rgba(255, 247, 220, 0.07);
+}
+
+.rewardStrip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  padding: 13px;
+}
+
+.rewardStrip strong,
+.statsGrid strong {
+  display: block;
+  margin-top: 5px;
+  color: #fffdf2;
+  font-size: 0.98rem;
+}
+
+.xpBadge {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 38px;
+  padding: 0 11px;
+  border-radius: 999px;
+  background: #f2b34f;
+  color: #172013;
+  font-weight: 900;
+}
+
+.primaryAction {
+  width: 100%;
+  min-height: 58px;
+  margin: 12px 0;
+  border: 0;
+  border-radius: 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #ffe08c, #f0a63d 55%, #50c7b8);
+  color: #172013;
+  font-size: 1.04rem;
+  font-weight: 950;
+  box-shadow: 0 14px 28px rgba(240, 166, 61, 0.2);
+}
+
+.primaryAction:disabled,
+.secondaryActions button:disabled {
+  cursor: not-allowed;
+  filter: grayscale(0.4);
+  opacity: 0.7;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+}
+
+.statsGrid > div {
+  min-width: 0;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.statsGrid strong {
+  overflow-wrap: anywhere;
+}
+
+.storyCard {
+  margin-top: 12px;
+  padding: 13px;
+}
+
+.storyHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.storyHeader h2 {
+  margin: 4px 0 0;
+  font-size: 1.25rem;
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+select {
+  max-width: 136px;
+  min-height: 38px;
+  border: 1px solid rgba(255, 247, 220, 0.22);
+  border-radius: 8px;
+  background: #263020;
+  color: #fff7dc;
+  padding: 0 8px;
+}
+
+.storyLog {
+  display: grid;
+  gap: 9px;
+}
+
+.storyLog p {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 10px;
+  color: #f5e9ca;
+  line-height: 1.46;
+}
+
+.storyLog span {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(80, 199, 184, 0.18);
+  color: #91eee2;
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+
+.secondaryActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.secondaryActions button,
+.secondaryActions a {
+  min-height: 42px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  color: #fff7dc;
+  text-decoration: none;
+}
+
+.secondaryActions button {
+  border: 1px solid rgba(255, 247, 220, 0.18);
+  background: rgba(255, 247, 220, 0.08);
+}
+
+.secondaryActions a {
+  border: 1px solid rgba(80, 199, 184, 0.32);
+  background: rgba(80, 199, 184, 0.12);
+}
+
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  place-items: end center;
+  padding: 18px;
+  background: rgba(0, 0, 0, 0.58);
+}
+
+.walletModal {
+  width: min(100%, 420px);
+  border: 1px solid rgba(255, 247, 220, 0.18);
+  border-radius: 8px;
+  background: #182015;
+  color: #fff7dc;
+  padding: 16px;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.48);
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.modalHeader h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.modalHeader button {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255, 247, 220, 0.18);
+  border-radius: 50%;
+  background: transparent;
+  color: #fff7dc;
+}
+
+.walletList {
+  display: grid;
+  gap: 9px;
+  margin: 14px 0;
+}
+
+.walletList button {
+  min-height: 48px;
+  border: 1px solid rgba(255, 247, 220, 0.16);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 12px;
+  background: rgba(255, 247, 220, 0.08);
+  color: #fff7dc;
+  font-weight: 850;
+}
+
+.walletModal p {
+  margin: 0;
+  color: #d9cfb6;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.spin {
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 820px) {
+  .shell {
+    grid-template-columns: minmax(0, 1fr) minmax(420px, 520px);
+    min-height: 100vh;
+  }
+
+  .hero {
+    min-height: 100vh;
+  }
+
+  .heroContent {
+    padding-top: 22vh;
+  }
+
+  .questPanel {
+    align-self: center;
+    margin: 24px 28px 24px 0;
+  }
+
+  .modalBackdrop {
+    place-items: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .rewardStrip,
+  .storyHeader,
+  .secondaryActions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .xpBadge,
+  select {
+    width: 100%;
+    justify-content: center;
+  }
+}

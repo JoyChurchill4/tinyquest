@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="TinyQuest icon">
+  <rect width="128" height="128" rx="24" fill="#172013"/>
+  <path d="M24 78c14-35 52-49 80-34-20 4-35 21-39 44-8-9-22-13-41-10Z" fill="#f2b34f"/>
+  <circle cx="72" cy="48" r="15" fill="#fff7dc"/>
+  <circle cx="78" cy="48" r="5" fill="#113b42"/>
+  <path d="M58 74h34v11H58zM47 88h50v12H47z" fill="#50c7b8"/>
+</svg>
