@@ -111,3 +111,9 @@ If something does not work as expected:
 No license information was provided in the original README.
 
 If a license is added to the repository, update this section to describe how the project may be used, copied, or distributed.
+
+## Contributing
+
+Contribution guidelines were not provided in the original README.
+
+If contribution rules are added later, include them here so contributors know how to report issues, submit changes, and follow project conventions.
