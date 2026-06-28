@@ -38,3 +38,10 @@ Before you begin, make sure you have:
 - Any runtime, compiler, or package manager required by the files included in the repository.
 
 Because the project may evolve over time, check the repository contents for configuration files, dependency manifests, or build instructions.
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/JoyChurchill4/tinyquest.git
