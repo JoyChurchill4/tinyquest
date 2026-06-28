@@ -71,3 +71,10 @@ Common places to look include:
 - Configuration files.
 - Dependency manifests.
 - Build or run scripts.
+- Documentation files.
+
+If the project includes dependency files, install the dependencies using the appropriate tool for the project.
+
+If the project includes scripts, use the commands defined by those scripts to run, test, or build the project.
+
+## Development Notes
