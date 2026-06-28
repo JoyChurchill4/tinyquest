@@ -91,3 +91,9 @@ When working on the project:
 
 1. Clone the repository.
 2. Create a local branch for your changes.
+3. Make and test your updates.
+4. Review the changes before committing.
+5. Commit with a clear message.
+6. Push the branch to the repository when ready.
+
+## Troubleshooting
