@@ -64,3 +64,10 @@ If your environment does not use the `code` command, open the folder manually wi
 ## Usage
 
 After cloning the project, review the files in the repository to identify the main entry point and any available scripts or commands.
+
+Common places to look include:
+
+- Source directories.
+- Configuration files.
+- Dependency manifests.
+- Build or run scripts.
