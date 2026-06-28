@@ -18,3 +18,9 @@ This README provides a clear starting point for setting up, exploring, and worki
 ## Repository
 
 Project name:
+
+**tinyquest**
+
+Repository URL:
+
+https://github.com/JoyChurchill4/tinyquest.git
