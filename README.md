@@ -30,3 +30,11 @@ https://github.com/JoyChurchill4/tinyquest.git
 Follow the steps below to create a local copy of the project.
 
 ### Prerequisites
+
+Before you begin, make sure you have:
+
+- Git installed on your machine.
+- A code editor or development environment of your choice.
+- Any runtime, compiler, or package manager required by the files included in the repository.
+
+Because the project may evolve over time, check the repository contents for configuration files, dependency manifests, or build instructions.
