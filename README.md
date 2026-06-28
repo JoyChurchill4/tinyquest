@@ -58,3 +58,9 @@ Open the project in your editor:
 ```bash
 code .
 ```
+
+If your environment does not use the `code` command, open the folder manually with your preferred editor.
+
+## Usage
+
+After cloning the project, review the files in the repository to identify the main entry point and any available scripts or commands.
