@@ -84,3 +84,10 @@ When working on the project:
 - Keep changes focused and easy to review.
 - Use clear commit messages.
 - Check the project structure before adding new files.
+- Update this README when setup or usage instructions change.
+- Prefer documenting commands that can be run consistently by future contributors.
+
+## Suggested Workflow
+
+1. Clone the repository.
+2. Create a local branch for your changes.
