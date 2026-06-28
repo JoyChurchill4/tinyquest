@@ -45,3 +45,9 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/JoyChurchill4/tinyquest.git
+```
+
+Move into the project directory:
+
+```bash
+cd tinyquest
