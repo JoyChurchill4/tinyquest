@@ -51,3 +51,10 @@ Move into the project directory:
 
 ```bash
 cd tinyquest
+```
+
+Open the project in your editor:
+
+```bash
+code .
+```
