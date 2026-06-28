@@ -24,3 +24,9 @@ Project name:
 Repository URL:
 
 https://github.com/JoyChurchill4/tinyquest.git
+
+## Getting Started
+
+Follow the steps below to create a local copy of the project.
+
+### Prerequisites
