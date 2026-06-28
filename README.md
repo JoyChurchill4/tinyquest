@@ -78,3 +78,9 @@ If the project includes dependency files, install the dependencies using the app
 If the project includes scripts, use the commands defined by those scripts to run, test, or build the project.
 
 ## Development Notes
+
+When working on the project:
+
+- Keep changes focused and easy to review.
+- Use clear commit messages.
+- Check the project structure before adding new files.
