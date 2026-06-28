@@ -97,3 +97,10 @@ When working on the project:
 6. Push the branch to the repository when ready.
 
 ## Troubleshooting
+
+If something does not work as expected:
+
+- Confirm that you are inside the `tinyquest` directory.
+- Check that required tools are installed.
+- Review configuration and dependency files.
+- Re-run setup steps after pulling new changes.
