@@ -104,3 +104,10 @@ If something does not work as expected:
 - Check that required tools are installed.
 - Review configuration and dependency files.
 - Re-run setup steps after pulling new changes.
+- Look for error messages that indicate missing dependencies or incorrect commands.
+
+## License
+
+No license information was provided in the original README.
+
+If a license is added to the repository, update this section to describe how the project may be used, copied, or distributed.
